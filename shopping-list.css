@@ -7,12 +7,15 @@ ul {
 
 .checkbox {
   margin-right: 8px;
+  cursor: pointer;
 }
 
 .label {
   display: flex;
   align-items: center;
   cursor: pointer;
+  font-size: 20px;
+  font-family: 'Lucida Handwriting Std';
 }
 
 .item {
@@ -21,4 +24,11 @@ ul {
 
 .cross {
   margin-left: auto;
+  padding: 0px 6px 1px;
+  color: #696969
+}
+
+.cross:hover {
+  background-color: #f6f6f6;
+  border-radius: 50%;
 }
