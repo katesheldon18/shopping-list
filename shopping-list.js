@@ -1,6 +1,13 @@
 const addItemButton = document.getElementById("addItemButton");
 
 addItemButton.addEventListener("click", addItem);
+//addItemButton.addEventListener("keyup", addItemByEnter);
+
+//function addItemByEnter() {
+  //if (keyup.keycode === 13) {
+   // addItem()
+ // }
+//}
 
 function addItem() {
   const list = document.getElementById("list");
