@@ -15,17 +15,17 @@ ul {
   align-items: center;
   cursor: pointer;
   font-size: 20px;
-  font-family: 'Lucida Handwriting Std';
 }
 
 .item {
   display: inline-block;
+  font-family: "Lucida Handwriting Std";
 }
 
 .cross {
   margin-left: auto;
   padding: 0px 6px 1px;
-  color: #696969
+  color: #696969;
 }
 
 .cross:hover {
