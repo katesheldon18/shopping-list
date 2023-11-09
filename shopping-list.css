@@ -32,3 +32,8 @@ ul {
   background-color: #f6f6f6;
   border-radius: 50%;
 }
+
+.checked {
+  color: #969696;
+  text-decoration: line-through;
+}

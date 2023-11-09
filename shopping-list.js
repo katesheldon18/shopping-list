@@ -15,7 +15,7 @@ function addItem(e) {
   let textInput = document.getElementById("itemInput").value;
   if (textInput.length > 0) {
     let newItem = document.createElement("li");
-    newItem.innerHTML = `                        <label class="label" id="item-${index}">
+    newItem.innerHTML = `                        <label class="label" id="itemLabel-${index}">
       <input type="checkbox" class="checkbox"/>
       <span class="item">${textInput}</span>
       <span class="cross">×</span>
@@ -25,7 +25,7 @@ function addItem(e) {
     document.getElementById("itemInput").value = "";
 
     document
-      .getElementById(`item-${index}`)
+      .getElementById(`itemLabel-${index}`)
       .addEventListener("click", function (e) {
         const target = e.target;
         // console.log(e.target.classList)
@@ -33,13 +33,13 @@ function addItem(e) {
           newItem.remove();
         }
         if (target.classList.contains("checkbox")) {
-          console.log("clicked checkbox")
+          if (target.checked == true) {
+            console.log("we just checked the box");
+          } else {
+            console.log("we just unchecked the box");
+          }
         }
       });
     index++;
   }
 }
-
-
-// Function to change the item class if the checkbox is checked vs unchecked:
-
