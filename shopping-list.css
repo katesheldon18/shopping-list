@@ -1,21 +1,24 @@
 body {
+  margin: 0 auto;
   text-align: center;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
+  width: 400px;
 }
 
 #itemInput {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 #addItemButton {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 ul {
   list-style: none;
   cursor: pointer;
-  padding-inline-start: 8px;
-  width: 213px;
+  padding-inline-start: 0px;
+  width: 240px;
+  margin: 24px auto;
 }
 
 .checkbox {

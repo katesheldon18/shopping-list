@@ -24,22 +24,26 @@ function addItem(e) {
 
     document.getElementById("itemInput").value = "";
 
-    document
-      .getElementById(`itemLabel-${index}`)
-      .addEventListener("click", function (e) {
-        const target = e.target;
-        // console.log(e.target.classList)
-        if (target.classList.contains("cross")) {
-          newItem.remove();
+    const label = document.getElementById(`itemLabel-${index}`);
+
+    label.addEventListener("click", function (e) {
+      const target = e.target;
+      const text = label.getElementsByClassName("item")[0];
+ 
+      if (target.classList.contains("cross")) {
+        newItem.remove();
+      }
+
+      if (target.classList.contains("checkbox")) {
+        if (target.checked == true) {
+          text.classList.add("checked")
+          //console.log("we just checked the box");
+        } else {
+          text.classList.remove("checked")
+          //console.log("we just unchecked the box");
         }
-        if (target.classList.contains("checkbox")) {
-          if (target.checked == true) {
-            console.log("we just checked the box");
-          } else {
-            console.log("we just unchecked the box");
-          }
-        }
-      });
+      }
+    });
     index++;
   }
 }
