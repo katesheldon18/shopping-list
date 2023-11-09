@@ -1,3 +1,16 @@
+body {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#itemInput {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#addItemButton {
+  font-family: 'Courier New', Courier, monospace;
+}
+
 ul {
   list-style: none;
   cursor: pointer;
