@@ -2,23 +2,44 @@ body {
   margin: 0 auto;
   text-align: center;
   font-family: "Courier New", Courier, monospace;
-  width: 400px;
+  background-color: rgb(249, 247, 247);
+}
+
+.container {
+  margin: 100px auto;
+  height: 1000px;
+  width: 800px;
+  border: 2px solid lightgrey;
+  background-color: white;
+}
+
+h1 {
+  font-size: 56px;
+}
+
+form {
+  padding: 16px;
 }
 
 #itemInput {
   font-family: "Courier New", Courier, monospace;
+  font-size: 24px;
+  padding: 2px;
 }
 
 #addItemButton {
   font-family: "Courier New", Courier, monospace;
+  font-size: 24px;
 }
 
 ul {
   list-style: none;
   cursor: pointer;
   padding-inline-start: 0px;
-  width: 240px;
-  margin: 24px auto;
+}
+
+li {
+  margin: 4px 230px;
 }
 
 .checkbox {
